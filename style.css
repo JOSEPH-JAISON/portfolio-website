@@ -1,0 +1,204 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.col-md-5{
+  align-items: center
+  
+}
+.ul{
+  padding: 0px;
+  margin: 0px;
+}
+
+ul.dynamic-txts{
+  
+  text-align: center;
+  background: #343F4F;
+}
+
+ .static-txt{
+  font-weight: 400;
+  text-align: center;
+  margin-top:auto;
+  margin-bottom: auto;
+
+  
+}
+ .dynamic-txts{
+  text-align: center;
+  margin-top:auto;
+  margin-bottom: auto;
+  height:90px;
+  line-height:90px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+.dynamic-txts li{
+  list-style: none;
+  font-weight: 500;
+  position: relative;
+  top:0;
+  animation: slide 12s steps(4) infinite;
+}
+@keyframes slide {
+  100%{
+    top: -360px;
+  }
+}
+.dynamic-txts li span{
+  position: relative;
+  text-align: center;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  line-height: 0px;
+  
+}
+
+@media screen and (min-width: 1068px) {
+  .static-txt {
+    font-size: 57px;
+    
+  }
+}
+@media screen and (min-width: 1068px) {
+  .dynamic-txts li {
+    font-size: 57px;
+  }
+}
+@media screen and (max-width: 1067px) {
+  .static-txt  {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 1067px) {
+  .dynamic-txts li  {
+    font-size: 40px;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .dynamic-txts li {
+    text-align: start;
+  }
+}
+@media screen and (max-width:767px) {
+  .dynamic-txts li  {
+    text-align:center;
+  }
+}
+
+
+
+@media screen and (min-width: 1068px) {
+  .p1 {
+    font-size: 57px;
+    
+  }
+}
+@media screen and (min-width: 1068px) {
+  .p-1 {
+    font-size: 57px;
+  }
+}
+@media screen and (max-width: 1067px) {
+  .st  {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 1067px) {
+  .dynamic-txts li  {
+    font-size: 40px;
+  }
+}
+
+
+
+
+
+/* The flip card container  */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 250px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; 
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  height: max-content;
+  
+}
+
+/* Style the back side */
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+
+
+* {box-sizing:border-box}
+
+/* Container for skill bars */
+.progress {
+  width:100%; /* Full width */
+  border: 1px solid black;
+  background-color: #ddd; /* Grey background */
+  
+}
+
+.progress-bar {
+  text-align: right; /* Right-align text */
+  padding-bottom: 10px;  /* Add bottom padding*/
+}
+.skill-percentage{
+  font-size: 13px;
+  
+}
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; 
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+
+
